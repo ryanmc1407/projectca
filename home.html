@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sea Sessions</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    </head>
+    <body>
+        <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+ 
+        <script> type="text/javascript">
+                let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeigth;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYoffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+</script>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="sea%20sessions.jpg">
+            </div>
+            <ul>
+                <li class="active"><a href="Home.html">Home</a></li>
+                <li><a href="TicketPrices.html">Ticket Prices</a></li>
+                <li><a href="Lineup.html">Lineup</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+         </div>
+        <div class="title">
+        <h1>Sea Sessions</h1>
+        </div>
+        
+        <div class="button">
+            <a href="LogIn.html">
+                <p class="button">Login/Register</p>
+            </a>
+        </div>
+        <video controls>
+        <source src="Rudimental.mp4%5D.mp4" video="web/mp4">
+        </video>
+        </header>
+    </body>
+</html>
